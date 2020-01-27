@@ -6,9 +6,7 @@ body {
     margin: 0;
     background: black;
 }
-#term {
-    height: 100vh;
-}
+
 :root {
     --background: #031e11;
     --size: 1.5;
