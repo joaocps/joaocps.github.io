@@ -7,8 +7,6 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    max-width: 100%;
-    height: auto;
 }
 
 body {
@@ -21,7 +19,7 @@ body {
 /*}*/
 
 #term {
-    height: 70vh;
+    height: 100vh;
 }
 
 :root {
