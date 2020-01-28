@@ -1,31 +1,45 @@
 /*
  * part of the style based on http://js13kgames.com/entries/lost-in-cyberspace
  */
+html {
+    background: url("../images/bluescreen.gif") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 body {
     margin: 0;
-    background: black;
+    /*background: slategrey;*/
 }
 
+/*div.stupid_img{*/
+/*    content:url(https://www.tokkoro.com/picsup/5027489-student-computer-minimalism-artist-digital-art.jpg);*/
+/*}*/
+
 #term {
-    height: 100vh;
+    height: 70vh;
 }
 
 :root {
     --background: #031e11;
     --size: 1.5;
 }
+
 /* to see yourself like in a mirror */
 .self {
     transform: scale(-1, 1);
 }
 /* flicker animation taken from http://goonhub.com/secret */
 .flicker {
+
+    margin: 0 auto;
+    height: 70vh;
+    width: 50%;
+
     position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    top: 200px;
     background: rgba(18, 16, 16, 0.2);
     opacity: 0;
     z-index: 1000;
@@ -105,16 +119,16 @@ body {
 https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
 */
 .scanlines {
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    margin: 0 auto;
+    top: 200px;
+    height: 70vh;
+    width: 50%;
     background: linear-gradient(
-        to bottom,
-        rgba(255,255,255,0),
-        rgba(255,255,255,0) 50%,
-        rgba(0,0,0,.2) 70%,
-        rgba(0,0,0,.6)
+            to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0) 50%,
+            rgba(0, 0, 0, .2) 70%,
+            rgba(0, 0, 0, .6)
     );
     background-size: 100% .3rem;
     position: fixed;
@@ -161,26 +175,30 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
 }
 /* turn off animation */
 .tv {
-    height: 100vh;
+    padding-top: 200px;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
     position: relative;
 }
 .tv.collapse {
-    animation: size 2s ease-out;
+    animation: size 3s ease-out;
     animation-fill-mode: forwards;
 }
 .tv.collapse:before {
     content: '';
     display: block;
-    height: 100%;
+    height: 70vh;
+    margin: 0 auto;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    top: 0;
+    top: 200px;
     background: white;
     z-index: 1;
     opacity: 0;
-    animation: opacity 2s ease-out;
+    animation: opacity 3s ease-out;
     animation-fill-mode: forwards;
 }
 
