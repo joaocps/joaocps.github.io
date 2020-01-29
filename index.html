@@ -12,14 +12,31 @@
     <script src="https://unpkg.com/treeify@1.0.1/treeify.js"></script>
     <script src="https://unpkg.com/css-vars-ponyfill@2/dist/css-vars-ponyfill.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
-    <div class="tv">
+<div class="tv">
+    <div class="vintage-shell">
+        <div class="status-bar">
+            <div class="button-exit">
+                <div onclick="exit()">
+                    <i class="fa fa-times-circle" style="color: red; font-size: 20px"></i>
+                </div>
+                <!--                <button onclick="exit()" class="fa-times-circle"></button>-->
+                <!--                <a href="javascript:;" class="close" title="Close">-->
+                <!--                    <i class="fa fa-times"></i>-->
+                <!--                </a>-->
+            </div>
+            <div class="title">user@host: ~</div>
+        </div>
         <div id="term"></div>
         <div class="flicker"></div>
         <div class="scanlines"></div>
     </div>
+</div>
+
+<!--    TODO: icons? backgroud image/colour? Pre animation?-->
 <script>
     var scanlines = $('.scanlines');
     var tv = $('.tv');
