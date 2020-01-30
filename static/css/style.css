@@ -2,13 +2,6 @@
  * part of the style based on http://js13kgames.com/entries/lost-in-cyberspace
  */
 
-@media only screen and (max-width: 768px) {
-    html {
-        background: black url("../images/myself.png") no-repeat center center;
-        background-size: 25% 60%;
-    }
-}
-
 html {
     /*background: url("../images/myself.png") no-repeat center center fixed;*/
     /*-webkit-background-size: cover;*/
@@ -19,6 +12,13 @@ html {
     /*better approximation with %*/
     /*background-size: 250px 550px;*/
     background-size: 15% 60%;
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        background: white url("../images/myself.png") no-repeat center center;
+        background-size: 55% 60%;
+    }
 }
 
 body {
