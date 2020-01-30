@@ -14,20 +14,16 @@ html {
     background-size: 15% 60%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 968px) {
     html {
         background: white url("../images/myself.png") no-repeat center center;
-        background-size: 55% 60%;
+        background-size: 50% 60%;
     }
 }
 
 body {
     margin: 0;
 }
-
-/*div.stupid_img{*/
-/*    content:url(https://www.tokkoro.com/picsup/5027489-student-computer-minimalism-artist-digital-art.jpg);*/
-/*}*/
 
 #term {
     height: 70vh;
