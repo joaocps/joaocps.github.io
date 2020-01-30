@@ -220,6 +220,7 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
 @keyframes opacity {
     to { opacity: 1; }
 }
+
 @keyframes size {
     50% {
         transform: scaleX(calc(1 / var(--width)));
