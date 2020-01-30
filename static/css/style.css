@@ -14,10 +14,10 @@ html {
     background-size: 15% 60%;
 }
 
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 768px) {
     html {
         background: white url("../images/myself.png") no-repeat center center;
-        background-size: 50% 60%;
+        background-size: 40% 60%;
     }
 }
 
