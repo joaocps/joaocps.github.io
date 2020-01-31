@@ -16,8 +16,8 @@
 }
 
 html {
-    background: black url("../images/myself.png") no-repeat center center;
-    background-size: 15% 60%;
+    background: black url("../images/santos.png") no-repeat center center;
+    background-size: 20% 60%;
 }
 
 body {
@@ -257,8 +257,8 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
 
 @media only screen and (max-width: 768px) {
     html {
-        background: black url("../images/myself.png") no-repeat center 180px;
-        background-size: 35% 55%;
+        background: black url("../images/santos.png") no-repeat center 180px;
+        background-size: 40% 55%;
     }
 
     .tv {
