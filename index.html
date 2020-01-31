@@ -57,6 +57,15 @@
             exit();
         } else if (command !== '') {
             if (command.match(/^\s*about\s*$/)) {
+                term.echo("            _________       |.-\"\"\"\"\"-.| |----|                                              ")
+                term.echo("    o      |   __   |       ||       || | == |                                              ");
+                term.echo("      \\_ O |  |__|  |       ||       || |----|                                              ");
+                term.echo("   ____/ \\ |___WW___|       |'-.....-'| |::::|                                              ");
+                term.echo("   __/   /     ||           `\"\")---(\"\"` |___.|                                              ");
+                term.echo("               ||          /:::::::::::\\                         ");
+                term.echo("_______________||_________/:::=======:::\\`\\`\\                                         ");
+
+
                 term.echo("TODO: about me, interests, previous jobs, sports, languages, blablabla");
             } else if (command.match(/^\s*college\s*$/)) {
                 term.echo("college things, programming languages, lectures ...");
