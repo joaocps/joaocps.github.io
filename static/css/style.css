@@ -30,6 +30,16 @@ body {
     border-top: 0;
 }
 
+.top-logo {
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/mylogo-white.png");
+}
+
 :root {
     --background: #031e11;
     --size: 1.5;
@@ -199,7 +209,7 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
       inset 0 -5px 10px rgba(25,25,25,0.1);
 }
 .tv {
-    top: 200px;
+    top: 0px;
     width: 70%;
     height: 50%;
     margin: 0 auto;
@@ -247,12 +257,12 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
 
 @media only screen and (max-width: 768px) {
     html {
-        background: black url("../images/myself.png") no-repeat center 120px;
+        background: black url("../images/myself.png") no-repeat center 180px;
         background-size: 35% 55%;
     }
 
     .tv {
-        top: 50px;
+        top: 0px;
         width: 70%;
         height: 10%;
         margin: 0 auto;
