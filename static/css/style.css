@@ -151,10 +151,12 @@ body {
     opacity: 0.37221;
   }
 }
+
 /* glow */
 .terminal {
     text-shadow: 0 0.2rem 1rem #0c7b46;
 }
+
 /* based on
 https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
 */
