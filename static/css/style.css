@@ -84,6 +84,7 @@ body {
     pointer-events: none;
     animation: flicker 0.12s infinite;
 }
+
 @keyframes flicker {
   0% {
     opacity: 0.552;
