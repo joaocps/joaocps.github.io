@@ -1,16 +1,21 @@
 /*
  * part of the style based on http://js13kgames.com/entries/lost-in-cyberspace
  */
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-image: url("../images/terminal-blink.gif");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+}
 
 html {
-    /*background: url("../images/myself.png") no-repeat center center fixed;*/
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
-    /*background-size: cover;*/
     background: black url("../images/myself.png") no-repeat center center;
-    /*better approximation with %*/
-    /*background-size: 250px 550px;*/
     background-size: 15% 60%;
 }
 
