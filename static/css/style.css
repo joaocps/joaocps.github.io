@@ -210,7 +210,7 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
 }
 .tv {
     top: 0px;
-    width: 70%;
+    width: 80%;
     height: 50%;
     margin: 0 auto;
     position: relative;
@@ -255,10 +255,25 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
     }
 }
 
-@media only screen and (max-width: 820px) {
+/*MANUAL RESIZE, STUPID BUT WORKS*/
+
+@media screen and (max-width: 970px) {
     html {
         background: black url("../images/santos.png") no-repeat center 200px;
-        background-size: 40% 55%;
+        background-size: 30% 60%;
+    }
+
+    :root {
+        --background: #031e11;
+        --size: 1.0;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    html {
+        background: black url("../images/santos.png") no-repeat center 200px;
+        background-size: 45% 55%;
     }
 
     .tv {
@@ -267,6 +282,39 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
         height: 10%;
         margin: 0 auto;
         position: relative;
+    }
+
+    :root {
+        --background: #031e11;
+        --size: 0.7;
+    }
+
+    .status-bar .title {
+        font-size: 1.0em;
+    }
+
+    .status-bar .button-exit {
+        padding: 1.5px;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    html {
+        background: black url("../images/santos.png") no-repeat center 200px;
+        background-size: 60% 55%;
+    }
+
+    .tv {
+        top: 0px;
+        width: 90%;
+        height: 10%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #term {
+        height: 60vh;
     }
 
     :root {
@@ -283,15 +331,3 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
         z-index: 1;
     }
 }
-
-/*@media only screen and (max-width: 1024px) and (orientation: landscape) {*/
-/*    html {*/
-/*        background: black url("../images/santos.png") no-repeat center 180px;*/
-/*        background-size: 30% 60%;*/
-/*    }*/
-
-/*    :root {*/
-/*        --background: #031e11;*/
-/*        --size: 0.5;*/
-/*    }*/
-/*}*/
