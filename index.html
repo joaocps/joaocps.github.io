@@ -13,12 +13,9 @@
     <script src="https://unpkg.com/treeify@1.0.1/treeify.js"></script>
     <script src="https://unpkg.com/css-vars-ponyfill@2/dist/css-vars-ponyfill.min.js"></script>
 
-    <!--    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>-->
-
     <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="static/css/style.css">
-
 </head>
 
 <body>
@@ -32,7 +29,7 @@
                     <i class="fa fa-times-circle" style="color: red; font-size: 20px"></i>
                 </div>
             </div>
-            <div class="title">user@host: ~</div>
+            <div class="title">joaosantos@portfolio: ~</div>
         </div>
         <div id="term"></div>
         <div class="flicker"></div>
@@ -41,7 +38,6 @@
 </div>
 
 <script>
-
     setTimeout(function () {
         $('.preloader').fadeOut('slow');
     }, 2000);
@@ -60,71 +56,61 @@
         } else if (command !== '') {
             if (command.match(/^\s*about\s*$/)) {
                 term.echo();
-                term.echo(" _________     |.-\"\"\"\"\"-.| |----|             __           __!__");
-                term.echo("|   __   |     ||       || | == |            |::|      _____(_)_____");
-                term.echo("|  |__|  |     ||       || |----|    ._.     |::|    ._.  !  !  !");
-                term.echo("|___WW___|     |'-.....-'| |::::|    |:| ._. |::|    |/|");
-                term.echo("    ||         `\"\")---(\"\"` |___.|    |:|_|/| |::| _  |/|");
-                term.echo("    ||        /:::::::::::\\          |:|\"|/|_|::||\\|_|/| _");
-                term.echo("____||_______/:::=======:::\\`\\`\\_____|:|\"|/|||::||\\|||/||:|_________");
+                term.echo("João Santos — Data Engineering Lead");
                 term.echo();
-                term.echo("Hi, my name is João Santos and i'm a fresh graduate of Aveiro University (Portugal). " +
-                    "I studied Informatics Engineering because i'm fascinated with the fact of letters make words, " +
-                    "words make sentenses, sentenses form lines of code, lines of code changes machine states and finally buuum ! I CHANGED THE WORLD!" +
-                    " Seems simple, doesn't it?");
+                term.echo("Location: Norwich, Norfolk, United Kingdom");
+                term.echo("Email: jcps@ua.pt | Phone: +351 915 019 640");
                 term.echo();
-                term.echo("I consider myself a creative, resilient, focused and responsible person but also fun, friendly and open-minded.");
+                term.echo("Summary:");
+                term.echo("Data Engineering leader with experience building and managing on-premises data capabilities from the ground up. Skilled in designing scalable data architectures, pipelines and APIs, with a focus on AI and Large Language Model integration. Proven ability to align technical strategy with business objectives and lead multidisciplinary teams across real estate, banking and B2B.");
                 term.echo();
-                term.echo("To clear my mind and my thoughts i like to spend most of my time with my family and friends. Yeah .. I like a lot of things besides technology, like" +
-                    " football, basketball, fishing, travel, wine, ... Email me if you want to know more about myself, it's really a lot of things! ");
+                term.echo("Core skills: Python, ETL & pipelines, Databases (SQL Server/Postgres/Cassandra), APIs, Web scraping, LLM integration, Docker, Open-source tooling.");
                 term.echo();
+                term.echo("Hobbies: Basketball, Fishing, Hiking, Home automation.");
             } else if (command.match(/^\s*college\s*$/)) {
                 term.echo("");
-                term.echo("         _nnnn_                      ");
-                term.echo("        dGGGGMMb     ,\"\"\"\"\"\"\"\"\"\"\"\"\"\".");
-                term.echo("       @p~qp~~qMb    | Linux Rules! |");
-                term.echo("       M|@||@) M|   _;..............'");
-                term.echo("       @,----.JM| -'");
-                term.echo("      JS^\\__/  qKL");
-                term.echo("     dZP        qKRb");
-                term.echo("    dZP          qKKb");
-                term.echo("   fZP            SMMb");
-                term.echo("   HZM            MMMM");
-                term.echo("   FqM            MMMM");
-                term.echo(" __| \".        |\\dS\"qML");
-                term.echo(" |    `.       | `' \\Zq");
-                term.echo("_)      \\.___.,|     .'");
-                term.echo("\\____   )MMMMMM|   .'");
-                term.echo("     `-'       `--'");
+                term.echo("Education: Informatics Engineering — University of Aveiro (Sept 2014 — Jul 2019)");
                 term.echo("");
-                term.echo("Department of Electronics, Telecommunications and Informatics (DETI) - Aveiro University. ");
+                term.echo("Program highlights:");
+                term.echo(" - Software engineering, information systems and artificial intelligence.");
+                term.echo(" - Web technologies, databases, IT security and data-driven systems.");
+                term.echo(" - Emphasis on practical projects and independent problem solving.");
                 term.echo("");
-                term.echo("I finished this year my BSc in Informatics Engineering. " +
-                    "During my college journey i had the opportunity to explore a lot of different technologies and methods. " +
-                    "Below i will explain my main skills as a newly graduated:");
-                term.echo();
-                term.echo("-> High-experienced and passioned with [[b;#f5c2ff;]Python], [[b;#f5c2ff;]Java] and the [[b;#f5c2ff;]object oriented programming] technique.");
-                term.echo("-> The final project involved an exhaustive use of python libraries like [[b;#f5c2ff;]opencv] and [[b;#f5c2ff;]QGIS].");
-                term.echo("-> Intermediate knowledge of [[b;#f5c2ff;]HTML5], [[b;#f5c2ff;]CSS3] and [[b;#f5c2ff;]javascipt].");
-                term.echo("-> High-experienced with [[b;#f5c2ff;]Git (github & bitbucket)] version control.");
-                term.echo("-> Medium-experienced with [[b;#f5c2ff;]jquery] and [[b;#f5c2ff;]bootstrap] front-end frameworks.");
-                term.echo("-> [[b;#f5c2ff;]SQL] databases like Mysql. DBMS, SQL DDL, SQL DML, stored procedures, triggers and security mechanisms.");
-                term.echo("-> Experience with logical models and physical data models for systems based on [[b;#f5c2ff;]NoSQL] paradigms like [[b;#f5c2ff;]MongoDB], " +
-                    "[[b;#f5c2ff;]redis], [[b;#f5c2ff;]cassandra] and [[b;#f5c2ff;]Neo4J].");
-                term.echo("-> Good understanding on the main issues related to the conception of distributed systems.");
-                term.echo("-> Knowledge about security vulnerabilities, vulnerabilities exploitation and the current practical solutions, " +
-                    "at different levels and with different goal, to enforce security attributes. ([[b;#f5c2ff;]Sql injection], [[b;#f5c2ff;]XSS], [[b;#f5c2ff;]RFI/RCE/LFI], " +
-                    "[[b;#f5c2ff;]Ciphers], [[b;#f5c2ff;]Auth] , ...)");
-                term.echo("-> Experience with tools like [[b;#f5c2ff;]Nmap], [[b;#f5c2ff;]SqlMap], [[b;#f5c2ff;]Nikto], [[b;#f5c2ff;]Metasploit] and [[b;#f5c2ff;]Hydra].");
-                term.echo("-> High-Experienced with [[b;#f5c2ff;]LaTeX] typesetting system.");
-                term.echo("-> Basic competence to develop reactive and / or deliberative agents, including the use of techniques for knowledge representation, " +
-                    "and search and planning techniques for agents.");
-                term.echo("-> Software testing experience, including methods and tools like [[b;#f5c2ff;]Agile dev], [[b;#f5c2ff;]code review], " +
-                    "[[b;#f5c2ff;]static code analysis], [[b;#f5c2ff;]CI/CD], [[b;#f5c2ff;]JIRA/Pivotal tracker], [[b;#f5c2ff;]Jenkins], [[b;#f5c2ff;]Junit], " +
-                    "[[b;#f5c2ff;]Mockito], [[b;#f5c2ff;]Docker], and [[b;#f5c2ff;]Selenium].");
-                term.echo();
-                term.echo("Most of my projects developed at college are available on my github page. Type [[b;#fff;]github] and take a look!");
-
+                term.echo("Final project — Forest Fire Spread Analysis and Emission Estimation (Feb 2019 — Jul 2019):");
+                term.echo(" - Developed a system to analyse fire propagation and estimate gas emissions.");
+                term.echo(" - Collected aerial imagery via drone, segmented burned regions and generated polygons representing temporal progression.");
+                term.echo(" - Mapped polygons to georeferenced regions to calculate real burned areas and track propagation.");
+                term.echo(" - Applied image processing and spatial/geospatial analysis to produce data-driven environmental insights.");
+                term.echo("");
+                term.echo("Technologies used: Python, OpenCV, geospatial tools, QGIS, image processing libraries.");
+            } else if (command.match(/^\s*experience\s*$/)) {
+                term.echo("");
+                term.echo("Lead Data & AI Engineer at InovaDigital (Apr 2021 — Current):");
+                term.echo(" - Define and execute the company's data strategy, oversee development and operation of data platforms.");
+                term.echo(" - Establish and manage data engineering department, including governance, architecture, and roadmap.");
+                term.echo(" - Collaborate with cross-functional teams and clients across sectors such as real estate, banking, and B2B.");
+                term.echo(" - Lead data acquisition, integration, and automation initiatives to enhance decision-making.");
+                term.echo(" - Oversee design and maintenance of data infrastructure, APIs, and pipelines ensuring scalability and reliability.");
+                term.echo(" - Manage a multidisciplinary team and act as the primary link between leadership and technical delivery.");
+                term.echo(" - Drive innovation via open-source solutions and LLM integration.");
+                term.echo(" - Ensure best practices in data management, security, and compliance.");
+                term.echo("");
+                term.echo("Data Engineer at M&ADigital (Feb 2020 — Apr 2021):");
+                term.echo(" - Contributed to early stages of company data transformation strategy.");
+                term.echo(" - Designed initial data collection and processing pipelines.");
+                term.echo(" - Supported multiple departments in identifying opportunities for data integration and analytics.");
+                term.echo(" - Assisted in design and implementation of scalable data architectures.");
+                term.echo(" - Developed ETL pipelines using Python and SQL to extract, transform, and load large datasets.");
+            } else if (command.match(/^\s*skills\s*$/)) {
+                term.echo("");
+                term.echo("Key Skills & Tools:");
+                term.echo(" - Programming: Python (5+ years), Java, SQL, Bash");
+                term.echo(" - Databases: SQL Server, PostgreSQL, Cassandra, MongoDB, Redis, Neo4J");
+                term.echo(" - Data Engineering: ETL, Pipelines, APIs, Data Modeling");
+                term.echo(" - AI & LLM Integration, Web Scraping (Scrapy)");
+                term.echo(" - DevOps & Tools: Docker, Nginx, Waitress, Portainer, Git, CI/CD, Linux");
+                term.echo(" - Web: HTML5, CSS3, JavaScript, jQuery, Bootstrap");
+                term.echo(" - Others: OpenCV, QGIS, Image Processing, LaTeX");
             } else if (command.match(/^\s*email\s*$/)) {
                 term.echo("jcps@ua.pt");
             } else if (command.match(/^\s*github\s*$/)) {
@@ -132,17 +118,19 @@
             } else if (command.match(/^\s*facebook\s*$/)) {
                 term.echo("https://www.facebook.com/jcps1994");
             } else if (command.match(/^\s*cv\s*$/)) {
-                term.echo("Display my cv! ");
-                window.open('static/documents/curriculum.pdf');
+                term.echo("Opening CV...");
+                window.open('static/documents/cv-joaocps-21102025.pdf');
             } else if (command.match(/^\s*help\s*$/)) {
                 term.echo("Available commands:");
-                term.echo("[[b;#fff;]about] - information about me.");
-                term.echo("[[b;#fff;]college] - information about what i learned during college.");
-                term.echo("[[b;#fff;]email] - my email address");
-                term.echo("[[b;#fff;]github] - my github account");
-                term.echo("[[b;#fff;]facebook] - my facebook profile");
-                term.echo("[[b;#fff;]cv] - my curriculum vitae");
-                term.echo("[[b;#fff;]exit] - massive earth destruction");
+                term.echo("[[b;#fff;]about]      - personal summary and contact details");
+                term.echo("[[b;#fff;]college]    - education and final project");
+                term.echo("[[b;#fff;]experience] - full work experience");
+                term.echo("[[b;#fff;]skills]     - key skills and tools");
+                term.echo("[[b;#fff;]email]      - email address");
+                term.echo("[[b;#fff;]github]     - github account");
+                term.echo("[[b;#fff;]facebook]   - facebook profile");
+                term.echo("[[b;#fff;]cv]         - open curriculum vitae (PDF)");
+                term.echo("[[b;#fff;]exit]       - close the terminal");
             } else {
                 term.error(command + ': command not found, type "help"');
             }
@@ -159,21 +147,19 @@
             this.echo(' | |_| | (_) | (_| | (_) |  ___) | (_| | | | | || (_) \\__ \\');
             this.echo('  \\___/ \\___/ \\__,_|\\___/  |____/ \\__,_|_| |_|\\__\\___/|___/');
             this.echo('                                                           ');
-            this.echo('Type [[b;#fff;]about] to see personal and super private information about me.');
-            this.echo('Type [[b;#fff;]college] to see what i learned during college.');
-            this.echo('Did I convince you? Type [[b;#fff;]email] and contact me!');
-            this.echo('Ok ... Type [[b;#fff;]github] to take a look of my unique restricted projects.');
-            this.echo('Just want to take a look at my facebook profile? Type [[b;#fff;]facebook].');
-            this.echo('Some serious stuff, my Curriculum Vitae is available typing [[b;#fff;]cv].')
-
-            this.echo('BIG ENDING !!Type [[b;#fff;]exit] to turn off this dummy terminal and see my beautiful face!');
-            this.echo('')
+            this.echo('Type [[b;#fff;]about] for a professional summary.');
+            this.echo('Type [[b;#fff;]college] for education and final project details.');
+            this.echo('Type [[b;#fff;]experience] for full work experience.');
+            this.echo('Type [[b;#fff;]skills] for key skills and tools.');
+            this.echo('Type [[b;#fff;]github] to open my GitHub profile.');
+            this.echo('Type [[b;#fff;]cv] to view my CV.');
+            this.echo('Type [[b;#fff;]help] to list available commands.');
+            this.echo('');
         },
         prompt: 'joaosantos@joaocps:~$ ', greetings: "",
     });
 
     function set_size() {
-        // for window height of 170 it should be 2s
         var height = $(window).height();
         var width = $(window).width();
         var time = (height * 2) / 170;
@@ -187,7 +173,6 @@
     }
 
     cssVars(); // ponyfill
-
 </script>
 
 </body>
