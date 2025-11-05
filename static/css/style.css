@@ -16,7 +16,7 @@
 }
 
 html {
-    background: black url("../images/santos.png") no-repeat center 200px;
+    background: black url("../images/cropped_circle_image.png") no-repeat center 200px;
     background-size: 20% 60%;
 }
 
@@ -259,7 +259,7 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
 
 @media screen and (max-width: 970px) {
     html {
-        background: black url("../images/santos.png") no-repeat center 200px;
+        background: black url("../images/cropped_circle_image.png") no-repeat center 200px;
         background-size: 30% 60%;
     }
 
@@ -272,7 +272,7 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
 @media only screen and (max-width: 650px) {
 
     html {
-        background: black url("../images/santos.png") no-repeat center 200px;
+        background: black url("../images/cropped_circle_image.png") no-repeat center 200px;
         background-size: 45% 55%;
     }
 
@@ -301,7 +301,7 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
 
 @media only screen and (max-width: 400px) {
     html {
-        background: black url("../images/santos.png") no-repeat center 200px;
+        background: black url("../images/cropped_circle_image.png") no-repeat center 200px;
         background-size: 60% 55%;
     }
 
