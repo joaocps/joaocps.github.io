@@ -17,7 +17,7 @@
 
 html {
     background: black url("../images/cropped_circle_image.png") no-repeat center 200px;
-    background-size: 20% 60%;
+    background-size: 30% 60%;
 }
 
 body {
@@ -260,7 +260,7 @@ https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
 @media screen and (max-width: 970px) {
     html {
         background: black url("../images/cropped_circle_image.png") no-repeat center 200px;
-        background-size: 30% 60%;
+        background-size: 40% 60%;
     }
 
     :root {
